@@ -41,7 +41,6 @@ export default function Projects() {
     const [selectedProject, setSelectedProject] = useState(null)
     return (
         <div className={styles.container}>
-            {/* <Shadows data={data}/> */}
             <Titles data={data} setSelectedProject={setSelectedProject}/>
             <Descriptions data={data} selectedProject={selectedProject}/>
         </div>
