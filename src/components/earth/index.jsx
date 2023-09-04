@@ -1,10 +1,9 @@
 'use client';
 import { Canvas, useLoader } from '@react-three/fiber'
 import { useRef } from 'react';
-import { useScroll, useTransform } from 'framer-motion';
+import { useScroll } from 'framer-motion';
 import { TextureLoader } from 'three/src/loaders/TextureLoader'
 import { motion } from 'framer-motion-3d';
-import Lenis from '@studio-freight/lenis'
 
 export default function earth() {
 
@@ -13,8 +12,8 @@ export default function earth() {
         target: scene,
         offset: ['start end', 'end start']
     })
-    
-    /* Used for smooth rotation if you don't want a global smooth scroll */
+
+    /* Used for smooth rotation if you're not using Lenis Scroll */
     // const smoothRotation = useSpring(scrollYProgress, {
     // damping: 20
     // });
