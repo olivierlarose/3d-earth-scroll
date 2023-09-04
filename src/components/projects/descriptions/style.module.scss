@@ -1,0 +1,35 @@
+.descriptions{
+    position: absolute;
+    top: 3px;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+    .description{
+        background-color: #ec4e39;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        clip-path: inset(50% 0 50%);
+        transition: clip-path .4s;
+        p{
+            &:nth-of-type(1){
+                color: #010101;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 8vw;
+                line-height: 7.5vw;
+                margin: 0px;
+                position: relative;
+                z-index: 1;
+            }
+            &:nth-of-type(2){
+                width: 40%;
+                font-size: 1vw;
+                font-weight: 700;
+            }
+        }
+    }
+}
